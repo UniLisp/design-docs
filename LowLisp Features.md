@@ -25,12 +25,14 @@ This document lists everything that will be needed in LowLisp, in order to imple
 * Are also available in raw form.
 * Must point to a type known at compile time.
 * May point to a tagged union (type :go, for “generic object”).
+* Do not need to know the size of their target.
 
 ## Library
 
 ### Memory allocation
 
 * Equivalents to C's malloc(), free(), and string functions.
+* All memory is zeroed after being received from the OS, and before being returned to it.
 
 ### I/O
 
