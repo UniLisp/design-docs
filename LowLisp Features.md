@@ -23,6 +23,7 @@ This document lists everything that will be needed in LowLisp, in order to imple
 
 * By default are reference-counted, and automatically deallocate their target once the last of their kind falls into oblivion.
 * Are also available in raw form.
+* Are also available in a raw form with no type information at compile-time, à la void pointer in C.
 * Must point to a type known at compile time.
 * May point to a tagged union (type :go, for “generic object”).
 * Do not need to know the size of their target.
