@@ -9,7 +9,7 @@
 
 ## Assembly
 The 8 bit operands are X, Y, and Z. A `$` indicates a register, otherwise it is a immediate value.
-Any combination such as YZ or XYZ indicates a larger immedieate value taking up 16 or 24 bits.
+Any combination such as YZ or XYZ indicates a larger immediate value taking up 16 or 24 bits.
 
 * Op table:
 
@@ -26,13 +26,13 @@ Any combination such as YZ or XYZ indicates a larger immedieate value taking up 
 | SUBU  | $X, $Y, Z   | Subtracts Z from $Y and stores it in $X (unsigned) |
 | SUBU  | $X, $Y, $Z  | Subtracts $Z from $Y and stores it in $X (unsigned) |
 | LDB   | $X, $Y, $Y  | Sets $X to the byte pointed to by $Y + $Z, performing sign extension |
-| LDBU  | $X, $Y, $Z  | Sets $X to the byte ponited to by $Y + $Z |
+| LDBU  | $X, $Y, $Z  | Sets $X to the byte pointed to by $Y + $Z |
 | LDW   | $X, $Y, $Y  | Sets $X to the wyde pointed to by $Y + $Z, performing sign extension |
-| LDWU  | $X, $Y, $Z  | Sets $X to the wyde ponited to by $Y + $Z |
+| LDWU  | $X, $Y, $Z  | Sets $X to the wyde pointed to by $Y + $Z |
 | LDT   | $X, $Y, $Y  | Sets $X to the tetra pointed to by $Y + $Z, performing sign extension |
 | LDTU  | $X, $Y, $Z  | Sets $X to the tetra pointed to by $Y + $Z |
 | LDA   | $X, *Label* | Same as the first LDTU, except the assembler finds an appropriate static register and value for the address of *Label* (Error if no valid combination can be found) |
-| JMP   | *Label*     | Jumps to 26-bit relative address *Label* (separate ops for fowards and backwards) |
+| JMP   | *Label*     | Jumps to 26-bit relative address *Label* (separate ops for forwards and backwards) |
 | CMP   | $X, $Y, $Z  | $Y < $Z -> -1, $Y = $Z -> 0, $Y > $Z -> 1 |
 | CMPU  | $X, $Y, $Y  | Same but unsigned |
 | BZ    | $X, *Label* | Jumps to 18-bit relative address *Label* if $X is 0 |
