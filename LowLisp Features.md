@@ -17,7 +17,7 @@ This document lists everything that will be needed in LowLisp, in order to imple
 * Are lexically scoped.
 * Are allocated on the stack when declared inside of a function.
 * Are allocated on the heap when declared outside of a function.
-* Must have a type that is known at compile-time, which must make include their size in memory.
+* Must have a type that is known at compile-time, which must include their size in memory.
 
 ### Pointers
 
